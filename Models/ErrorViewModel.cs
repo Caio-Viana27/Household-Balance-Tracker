@@ -1,4 +1,4 @@
-namespace household_balance.Models;
+namespace Household_Balance_Tracker.Models;
 
 public class ErrorViewModel
 {

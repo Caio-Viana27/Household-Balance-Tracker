@@ -1,8 +1,8 @@
+namespace Household_Balance_Tracker.Controllers;
+
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using household_balance.Models;
-
-namespace household_balance.Controllers;
+using Household_Balance_Tracker.Models;
 
 public class HomeController : Controller
 {

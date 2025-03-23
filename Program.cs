@@ -1,29 +1,42 @@
-var builder = WebApplication.CreateBuilder(args);
+namespace Household_Balance_Tracker;
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+using Household_Balance_Tracker.Controllers;
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+public class Program
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+
+        // Add services to the container.
+        builder.Services.AddControllersWithViews();
+
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+        if (!app.Environment.IsDevelopment())
+        {
+            app.UseExceptionHandler("/Home/Error");
+            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            app.UseHsts();
+        }
+
+        PersonController personController = new PersonController();
+        ReportController reportController = new ReportController();
+        TransactionController transactionController = new TransactionController();
+
+        app.UseHttpsRedirection();
+        app.UseRouting();
+
+        app.UseAuthorization();
+
+        app.MapStaticAssets();
+
+        app.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}")
+            .WithStaticAssets();
+
+        app.Run();
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapStaticAssets();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
-
-app.Run();

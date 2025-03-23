@@ -80,8 +80,8 @@
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/bhxsdkg6n5-muycvpuwrr.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/epl1hwr33o-87fc7y1x7t.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/jk9766r5nt-jfsiqqwiad.gz
-/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/qd7vrztsrn-hmehdi0je4.gz
-/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/vymx222len-hmehdi0je4.gz
+/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/qd7vrztsrn-6ynqbq4ruq.gz
+/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/vymx222len-6ynqbq4ruq.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/staticwebassets.build.json
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/staticwebassets.development.json
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/staticwebassets.build.endpoints.json
