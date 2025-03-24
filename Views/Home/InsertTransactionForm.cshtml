@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Insert Transaction";
+}
+
+<div class="form-div">
+    <h1>@ViewData["Title"]</h1>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="transactionDetails">Description</label>
+            <input type="text" class="form-control form-field" id="transactionDetails" aria-describedby="emailHelp"
+                placeholder="Description">
+        </div>
+        <div class="form-group">
+            <label for="transactionValue">Value</label>
+            <input type="text" class="form-control form-field" id="transactionValue" placeholder="R$100,00">
+        </div>
+        <div class="form-group">
+            <label for="transactionType">Transaction type</label>
+            <select class="form-control form-field" id="transactionType">
+                <option>Expense</option>
+                <option>Income</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="transactionOwnerIdOrEmail">Owner identifier</label>
+            <input type="Text" class="form-control form-field" id="transactionOwnerIdOrEmail"
+                placeholder="Person id or email">
+        </div>
+        <br>
+        <button type="submit" class="button btn form-field">Insert</button>
+    </form>
+</div>

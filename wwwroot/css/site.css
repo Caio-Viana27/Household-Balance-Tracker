@@ -18,7 +18,31 @@ html {
 }
 
 body {
+  background-color: beige;
   margin-bottom: 60px;
+}
+
+.form-div {
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+
+    background-color: rgb(255, 255, 255);
+    
+    border: 2px solid rgb(233, 233, 226);
+    border-radius: 15px;
+}
+
+.form-field {
+    margin: 1% 0px;
+    background-color: beige;
+    border: 1px solid rgb(201, 201, 192);
+}
+
+button.form-field:hover {
+    background-color: beige;
+    border: 1px solid rgb(201, 201, 192);
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
