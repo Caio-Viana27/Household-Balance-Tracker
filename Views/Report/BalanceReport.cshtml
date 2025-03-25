@@ -60,13 +60,13 @@
                     houseTotalExpense += personTotalExpense;
 
                     <tr>
-                        <td class="">@person.getName()</td>
-                        <td class="">@person.getAge()</td>
-                        <td class="">@person.getEmail()</td>
-                        <td class="">@person.getId()</td>
-                        <td class=""><span class="success">R$@personTotalIncome</span></td>
-                        <td class=""><span class="failed">@personTotalExpense</span></td>
-                        <td class="">@personBalance</td>
+                        <td>@person.getName()</td>
+                        <td>@person.getAge()</td>
+                        <td>@person.getEmail()</td>
+                        <td>@person.getId()</td>
+                        <td><span class="success">R$@personTotalIncome</span></td>
+                        <td><span class="failed">@personTotalExpense</span></td>
+                        <td>@personBalance</td>
                     </tr>
                 }
             </tbody>
@@ -75,8 +75,25 @@
         houseBalance = houseTotalIncome - houseTotalExpense;
 
         <br>
-        <h4 class="success">Total House Income: R$@houseTotalIncome</h4>
-        <h4 class="failed">Total House Expense: R$@houseTotalExpense</h4>
-        <h4>House Balance: R$@houseBalance</h4>
+
+        <h4>House Balance</h4>
+
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th class="col">Total Income</th>
+                    <th class="col">Total Expense</th>
+                    <th class="col">Total Balance</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><span class="success">R$@houseTotalIncome</span></td>
+                    <td><span class="failed">R$@houseTotalExpense</span></td>
+                    <td>R$@houseBalance</td>
+                </tr>
+            </tbody>
+        </table>
     }
 </div>

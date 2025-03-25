@@ -13,9 +13,8 @@
     {
         <div class="form-group">
             <label for="personEmail">Email Address</label>
-            @Html.TextBoxFor(m => m.email, new { name = "email", id = "personEmail", @class = "form-control form-field",
-            placeholder =
-            "Enter email" })
+            @Html.TextBoxFor(m => m.email, new { @name = "email", @id = "personEmail", @class = "form-control form-field",
+            @placeholder = "Enter email" })
         @Html.ValidationMessageFor(m => m.email, null, new { @class = "validation-warning" })
     </div>
 

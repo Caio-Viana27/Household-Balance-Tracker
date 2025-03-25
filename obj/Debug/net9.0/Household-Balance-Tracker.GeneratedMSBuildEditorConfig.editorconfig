@@ -52,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Transaction/InsertTransactionFailed.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb24vSW5zZXJ0VHJhbnNhY3Rpb25GYWlsZWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Transaction/InsertTransactionForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb24vSW5zZXJ0VHJhbnNhY3Rpb25Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Transaction/TransactionFailedPersonIsMinor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb24vVHJhbnNhY3Rpb25GYWlsZWRQZXJzb25Jc01pbm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Transaction/TransactionFailedPersonNotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb24vVHJhbnNhY3Rpb25GYWlsZWRQZXJzb25Ob3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/_ViewImports.cshtml]

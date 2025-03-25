@@ -48,7 +48,7 @@ public class PersonController : Controller
     }
 
     [HttpPost]
-    public IActionResult RemovePerson(PersonViewModel model)
+    public IActionResult RemovePerson(string? email)
     {
         if (model.email == null)
         {

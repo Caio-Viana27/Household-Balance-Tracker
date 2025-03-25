@@ -36,18 +36,18 @@ public class TransactionController : Controller
 
         Person transactionOwner = getOwner(model.emailOrId);
 
-        if (transactionOwner == null)
-        {
-            return View("TransactionFailedPersonNotFound", model);
-        }
-
-        if (transactionOwner.getAge() < 18 && "Income".Equals(model.type))
-        {
-            return View("TransactionFailedPersonIsMinor", model);
-        }
-
         if (ModelState.IsValid)
         {
+            if (transactionOwner == null)
+            {
+                return View("TransactionFailedPersonNotFound", model);
+            }
+
+            if (transactionOwner.getAge() < 18 && "Income".Equals(model.type))
+            {
+                return View("TransactionFailedPersonIsMinor", model);
+            }
+
             addNewTransaction(transactionOwner.getEmail(), model);
 
             ViewBag.Massage = "Registration Successfull";
