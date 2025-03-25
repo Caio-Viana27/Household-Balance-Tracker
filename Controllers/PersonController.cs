@@ -39,7 +39,7 @@ public class PersonController : Controller
             people.Add(model.email, new Person(idCounter++, model.name, model.age, model.email));
 
             ViewBag.Massage = "Registration Successfull";
-            return View("Success", model);
+            return View("SuccessfulPersonWarning", model);
         }
         else
         {
@@ -67,7 +67,7 @@ public class PersonController : Controller
         // implemt remove Transactions beloging to person.email
 
         people.Remove(model.email);
-        return View("Success", new PersonViewModel(toBeRemoved.getName(),
+        return View("SuccessfulPersonWarning", new PersonViewModel(toBeRemoved.getName(),
                                                    toBeRemoved.getAge(),
                                                    toBeRemoved.getEmail()));
     }

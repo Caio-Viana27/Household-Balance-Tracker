@@ -1,36 +1,45 @@
+@using Household_Balance_Tracker.Models.ViewModels
+
+@model TransactionViewModel
+
 @{
-    ViewData["Title"] = "Insert Transaction";
+    ViewData["Title"] = "Insert Trancastion";
+
+    var TransactionTypes = new SelectList(new[] {
+        new SelectListItem {Value = "Expense", Text = "Expense"},
+        new SelectListItem {Value = "Income", Text = "Income"},
+    }, "Value", "Text");
 }
 
 <div class="form-div">
     <h1>@ViewData["Title"]</h1>
 
-    <form action="" method="post">
+    @using (Html.BeginForm("InsertTransaction", "Transaction", FormMethod.Post))
+    {
         <div class="form-group">
-            <label for="transactionDetails">Description</label>
-            <input type="text" class="form-control form-field" name="description" id="transactionDetails"
-                aria-describedby="emailHelp" placeholder="Description">
+            <label for="transactionDetails">Details</label>
+            @Html.TextBoxFor(m => m.details, new { @id = "transactionDetails", @class = "form-control form-field", @placeholder = "Details" })
+            @Html.ValidationMessageFor(m => m.details, null, new { @class = "validation-warning" })
         </div>
+
         <div class="form-group">
             <label for="transactionValue">Value</label>
-            <input type="text" class="form-control form-field" name="value" id="transactionValue"
-                placeholder="R$100,00">
+            @Html.TextBoxFor(m => m.value, new { @id = "transactionValue", @class = "form-control form-field", @placeholder = "R$100,00" })
+            @Html.ValidationMessageFor(m => m.value, null, new { @class = "validation-warning" })
         </div>
+
         <div class="form-group">
-            <label for="transactionType">Transaction type</label>
-            <select class="form-control form-field" name="type" id="transactionType">
-                <option>Expense</option>
-                <option>Income</option>
-            </select>
+            <label for="transactionType">Age</label>
+            @Html.DropDownListFor(m => m.type, TransactionTypes, new { @id = "transactionType", @class = "form-control form-field"})
+            @Html.ValidationMessageFor(m => m.type, null, new { @class = "validation-warning" })
         </div>
+
         <div class="form-group">
-            <label for="transactionOwnerIdOrEmail">Owner identifier</label>
-            <input type="Text" class="form-control form-field" name="personId" id="transactionOwnerIdOrEmail"
-                placeholder="Person id or email">
+            <label for="transactionOwnerIdOrEmail">Owner Identifier</label>
+            @Html.TextBoxFor(m => m.emailOrId, new { @id = "transactionOwnerIdOrEmail", @class = "form-control form-field", @placeholder = "Person id or email" })
+            @Html.ValidationMessageFor(m => m.emailOrId, null, new { @class = "validation-warning" })
         </div>
-        <br>
-        <div class="form-group">
-            <input type="submit" class="button form-field" value="Insert">
-        </div>
-    </form>
+
+        <button type="submit" class="button form-field">Register</button>
+    }
 </div>

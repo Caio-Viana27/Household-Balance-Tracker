@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 public class TransactionViewModel
 {
     [Required]
-    public int personId { get; set; }
+    public string? emailOrId { get; set; }
     [Required]
     public string? details { get; set; }
     [Required]

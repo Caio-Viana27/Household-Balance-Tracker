@@ -7,6 +7,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 using Household_Balance_Tracker.Interfaces;
+using Household_Balance_Tracker.Models.ViewModels;
 
 /// <summary>
 /// Class responsible for managing transactions between veiws and model
@@ -25,22 +26,32 @@ public class TransactionController : Controller
     }
 
     [HttpPost]
-    public IActionResult InsertTransactionForm(TrasactionViewModel model)
+    public IActionResult InsertTransaction(TransactionViewModel model)
     {
-        System.Console.WriteLine("Name: " + model.name);
-        System.Console.WriteLine("Age: " + model.age);
-        System.Console.WriteLine("email: " + model.email);
+        System.Console.WriteLine("Details: " + model.details);
+        System.Console.WriteLine("Value: " + model.value);
+        System.Console.WriteLine("Type: " + model.type);
+        System.Console.WriteLine("Person Id: " + model.emailOrId);
 
-        /* if (ModelState.IsValid)
+
+
+        if (ModelState.IsValid)
         {
-            transactions.Add(model.email, new Person(idCounter++, model.name, model.age, model.email));
+            //transactions.Add(model.email, new Person(idCounter++, model.name, model.age, model.email));
 
             ViewBag.Massage = "Registration Successfull";
-            return View("Success", model);
+            return View("SuccessfulTransactionWarning", model);
         }
         else
         {
             return View("InsertPersonForm");
-        } */
+        }
+    }
+
+    private bool isValidEmailOrId(string emailOrId)
+    {
+
+
+        return true;
     }
 }

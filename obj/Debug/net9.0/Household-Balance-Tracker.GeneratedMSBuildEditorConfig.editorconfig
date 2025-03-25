@@ -44,8 +44,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Shared/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1N1Y2Nlc3MuY3NodG1s
+[/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Shared/SuccessfulPersonWarning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1N1Y2Nlc3NmdWxQZXJzb25XYXJuaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Shared/SuccessfulTransactionWarning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1N1Y2Nlc3NmdWxUcmFuc2FjdGlvbldhcm5pbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/Views/Shared/_ValidationScriptsPartial.cshtml]
