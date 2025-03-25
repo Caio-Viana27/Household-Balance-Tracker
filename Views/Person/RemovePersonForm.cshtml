@@ -1,0 +1,24 @@
+@using Household_Balance_Tracker.Models.ViewModels
+
+@model PersonViewModel
+
+@{
+    ViewData["Title"] = "Remove Person";
+}
+
+<div class="form-div">
+    <h1>@ViewData["Title"]</h1>
+
+    @using (Html.BeginForm("RemovePerson", "Person", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="personEmail">Email Address</label>
+            @Html.TextBoxFor(m => m.email, new { name = "email", id = "personEmail", @class = "form-control form-field",
+            placeholder =
+            "Enter email" })
+        @Html.ValidationMessageFor(m => m.email, null, new { @class = "validation-warning" })
+    </div>
+
+    <button type="submit" class="button form-field">Remove</button>
+        }
+</div>

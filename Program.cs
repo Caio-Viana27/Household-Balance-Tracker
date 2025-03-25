@@ -21,10 +21,6 @@ public class Program
             app.UseHsts();
         }
 
-        PersonController personController = new PersonController();
-        ReportController reportController = new ReportController();
-        TransactionController transactionController = new TransactionController();
-
         app.UseHttpsRedirection();
         app.UseRouting();
 

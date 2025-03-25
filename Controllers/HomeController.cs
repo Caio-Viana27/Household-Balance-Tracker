@@ -1,7 +1,9 @@
 namespace Household_Balance_Tracker.Controllers;
 
 using System.Diagnostics;
+
 using Microsoft.AspNetCore.Mvc;
+
 using Household_Balance_Tracker.Models;
 
 public class HomeController : Controller
@@ -19,16 +21,6 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    public IActionResult InsertPersonForm()
-    {
-        return View();
-    }
-
-    public IActionResult InsertTransactionForm()
     {
         return View();
     }

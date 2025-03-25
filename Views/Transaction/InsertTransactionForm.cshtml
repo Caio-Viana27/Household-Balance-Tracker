@@ -8,26 +8,29 @@
     <form action="" method="post">
         <div class="form-group">
             <label for="transactionDetails">Description</label>
-            <input type="text" class="form-control form-field" id="transactionDetails" aria-describedby="emailHelp"
-                placeholder="Description">
+            <input type="text" class="form-control form-field" name="description" id="transactionDetails"
+                aria-describedby="emailHelp" placeholder="Description">
         </div>
         <div class="form-group">
             <label for="transactionValue">Value</label>
-            <input type="text" class="form-control form-field" id="transactionValue" placeholder="R$100,00">
+            <input type="text" class="form-control form-field" name="value" id="transactionValue"
+                placeholder="R$100,00">
         </div>
         <div class="form-group">
             <label for="transactionType">Transaction type</label>
-            <select class="form-control form-field" id="transactionType">
+            <select class="form-control form-field" name="type" id="transactionType">
                 <option>Expense</option>
                 <option>Income</option>
             </select>
         </div>
         <div class="form-group">
             <label for="transactionOwnerIdOrEmail">Owner identifier</label>
-            <input type="Text" class="form-control form-field" id="transactionOwnerIdOrEmail"
+            <input type="Text" class="form-control form-field" name="personId" id="transactionOwnerIdOrEmail"
                 placeholder="Person id or email">
         </div>
         <br>
-        <button type="submit" class="button btn form-field">Insert</button>
+        <div class="form-group">
+            <input type="submit" class="button form-field" value="Insert">
+        </div>
     </form>
 </div>

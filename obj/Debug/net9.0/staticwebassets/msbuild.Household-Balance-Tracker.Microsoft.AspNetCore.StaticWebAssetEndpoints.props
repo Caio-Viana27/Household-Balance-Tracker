@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/css/site.4e74ek053h.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4e74ek053h"},{"Name":"integrity","Value":"sha256-lCMTtPJRbo3NTx\u002B4hzjjYUs/xMUIhOUB4xLblEVV\u002B\u002Bg="},{"Name":"label","Value":"_content/Household-Balance-Tracker/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1070"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lCMTtPJRbo3NTx\u002B4hzjjYUs/xMUIhOUB4xLblEVV\u002B\u002Bg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 00:54:08 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lCMTtPJRbo3NTx\u002B4hzjjYUs/xMUIhOUB4xLblEVV\u002B\u002Bg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1070"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lCMTtPJRbo3NTx\u002B4hzjjYUs/xMUIhOUB4xLblEVV\u002B\u002Bg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 00:54:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BbLRCDeh8rpPyX4zIjGWExpNHiAFZFITLyhwOi6nDPQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1420"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BbLRCDeh8rpPyX4zIjGWExpNHiAFZFITLyhwOi6nDPQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 23:55:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/css/site.pj4855tn69.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pj4855tn69"},{"Name":"integrity","Value":"sha256-BbLRCDeh8rpPyX4zIjGWExpNHiAFZFITLyhwOi6nDPQ="},{"Name":"label","Value":"_content/Household-Balance-Tracker/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1420"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BbLRCDeh8rpPyX4zIjGWExpNHiAFZFITLyhwOi6nDPQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 23:55:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Household-Balance-Tracker.6ynqbq4ruq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6ynqbq4ruq"},{"Name":"integrity","Value":"sha256-QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk="},{"Name":"label","Value":"_content/Household-Balance-Tracker/Household-Balance-Tracker.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1094"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 01:08:52 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1094"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 01:08:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/Household-Balance-Tracker.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Household-Balance-Tracker.6ynqbq4ruq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1094"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 01:08:52 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1094"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QnFbyxe7i8Lpq2iWRR6sQkCsljRjMbTJET9q6\u002BMVXfk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 01:08:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Household-Balance-Tracker/js/site.fr7q2aak1r.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
