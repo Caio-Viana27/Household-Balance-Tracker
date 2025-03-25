@@ -6,14 +6,14 @@ namespace Household_Balance_Tracker.Interfaces;
 public abstract class ITransaction
 {
     protected int id;
-    protected int personId { get; }
+    protected string ownerEmailOrId { get; }
     protected string? details { get; }
     protected double value { get; }
 
-    protected ITransaction(int id, int personId, string details, double value)
+    protected ITransaction(int id, string emailOrId, string details, double value)
     {
         this.id = id;
-        this.personId = personId;
+        this.ownerEmailOrId = emailOrId;
         this.details = details;
         this.value = value;
     }

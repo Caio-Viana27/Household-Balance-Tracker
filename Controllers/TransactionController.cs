@@ -38,12 +38,17 @@ public class TransactionController : Controller
 
         if (transactionOwner == null)
         {
-            return View("InsertTransactionFailed", model);
+            return View("TransactionFailedPersonNotFound", model);
+        }
+
+        if (transactionOwner.getId() < 18 && "Income".Equals(model.type))
+        {
+            return View("TransactionFailedPersonIsMinor", model);
         }
 
         if (ModelState.IsValid)
         {
-            //addTransaction(transactionOwner.getEmail(), model);
+            addNewTransaction(transactionOwner.getEmail(), model);
 
             ViewBag.Massage = "Registration Successfull";
             return View("SuccessfulTransactionWarning", model);
@@ -54,16 +59,32 @@ public class TransactionController : Controller
         }
     }
 
-    /* private void addTransaction(string? ownerEmail, TransactionViewModel? model)
+    private void addNewTransaction(string? ownerEmail, TransactionViewModel? model)
     {
-        if ("Expense".equals(model.type))
+        if ("Expense".Equals(model.type))
         {
-            if (transactions.ContainsKey(ownerEmail))
-            {
-                transactions.Add(ownerEmail, new Expense(idCounter++, model.details, model.value, model.type, model.emailOrId));
-            }
+            addToList(ownerEmail, new Expense(idCounter++, model.details, Convert.ToDouble(model.value), model.emailOrId));
         }
-    } */
+        else if ("Income".Equals(model.type))
+        {
+            addToList(ownerEmail, new Income(idCounter++, model.details, Convert.ToDouble(model.value), model.emailOrId));
+        }
+    }
+
+    private void addToList(string key, ITransaction newTransaction)
+    {
+        if (!transactions.ContainsKey(key))
+        {
+            var newlist = new List<ITransaction>();
+            newlist.Add(newTransaction);
+
+            transactions.Add(key, newlist);
+            return;
+        }
+
+        transactions.TryGetValue(key, out List<ITransaction> list);
+        list.Add(newTransaction);
+    }
 
     /// <summary>
     /// Simple method that return if an id or email exists in a dictionary

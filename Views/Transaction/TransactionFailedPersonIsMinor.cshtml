@@ -1,0 +1,10 @@
+@using Household_Balance_Tracker.Models.ViewModels
+
+@model TransactionViewModel
+
+<h2 class="failed">Registration Failed</h2>
+<h2 class="failed">Owners under age can not have income</h2>
+<p>Details: @Model.details</p>
+<p>Value: @Model.value</p>
+<p class="failed">Type: @Model.type</p>
+<p>Owner Identifier: @Model.emailOrId</p>

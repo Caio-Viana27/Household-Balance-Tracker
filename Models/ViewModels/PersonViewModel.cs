@@ -8,7 +8,7 @@ public class PersonViewModel
     public string? name { get; set; }
 
     [Required(ErrorMessage = "Age is required")]
-    [Range(18, 100, ErrorMessage = "Age must be between 18 and 100")]
+    [Range(0, 120, ErrorMessage = "Age must be between 0 and 120")]
     public int age { get; set; }
 
     [Required(ErrorMessage = "Email is required")]
