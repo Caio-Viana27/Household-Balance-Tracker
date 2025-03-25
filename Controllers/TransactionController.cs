@@ -23,4 +23,24 @@ public class TransactionController : Controller
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult InsertTransactionForm(TrasactionViewModel model)
+    {
+        System.Console.WriteLine("Name: " + model.name);
+        System.Console.WriteLine("Age: " + model.age);
+        System.Console.WriteLine("email: " + model.email);
+
+        /* if (ModelState.IsValid)
+        {
+            transactions.Add(model.email, new Person(idCounter++, model.name, model.age, model.email));
+
+            ViewBag.Massage = "Registration Successfull";
+            return View("Success", model);
+        }
+        else
+        {
+            return View("InsertPersonForm");
+        } */
+    }
 }
