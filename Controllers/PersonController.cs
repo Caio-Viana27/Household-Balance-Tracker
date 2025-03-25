@@ -14,8 +14,8 @@ using Household_Balance_Tracker.Models.ViewModels;
 /// </summary>
 public class PersonController : Controller
 {
-    private Dictionary<string, Person>? people = new Dictionary<string, Person>();
-    private int idCounter = 0;
+    public static Dictionary<string, Person>? people = new Dictionary<string, Person>();
+    public static int idCounter = 0;
 
     public IActionResult InsertPersonForm()
     {
@@ -70,15 +70,5 @@ public class PersonController : Controller
         return View("SuccessfulPersonWarning", new PersonViewModel(toBeRemoved.getName(),
                                                    toBeRemoved.getAge(),
                                                    toBeRemoved.getEmail()));
-    }
-
-    public Dictionary<string, Person> getPeople()
-    {
-        return people;
-    }
-
-    public int getIdCounter()
-    {
-        return idCounter;
     }
 }

@@ -72,6 +72,11 @@ body {
     border-radius: 15px;
 }
 
-.validation-warning {
-    color: red;
+.success {
+    color: rgb(25, 221, 25);
 }
+
+.validation-warning, .failed {
+    color: rgb(255, 0, 0);
+}
+

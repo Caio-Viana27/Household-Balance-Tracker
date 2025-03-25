@@ -24,7 +24,7 @@
 
         <div class="form-group">
             <label for="transactionValue">Value</label>
-            @Html.TextBoxFor(m => m.value, new { @id = "transactionValue", @class = "form-control form-field", @placeholder = "R$100,00" })
+            @Html.TextBoxFor(m => m.value, new { @id = "transactionValue", @class = "form-control form-field", @placeholder = "R$100.00" })
             @Html.ValidationMessageFor(m => m.value, null, new { @class = "validation-warning" })
         </div>
 

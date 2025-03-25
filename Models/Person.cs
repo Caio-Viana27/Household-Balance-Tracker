@@ -2,7 +2,7 @@ namespace Household_Balance_Tracker.Models;
 
 public class Person
 {
-    private int id;
+    private int id { get; set; }
     private string name { get; set; }
     private int age { get; set; }
     private string email { get; set; }
@@ -26,5 +26,10 @@ public class Person
     public string getEmail()
     {
         return email;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 }
