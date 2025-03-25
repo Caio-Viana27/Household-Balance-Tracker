@@ -12,6 +12,11 @@ public class Expense : ITransaction
 
     public override double getValue()
     {
-        return -value;
+        return value;
+    }
+
+    public override TransactionType getType()
+    {
+        return type;
     }
 }

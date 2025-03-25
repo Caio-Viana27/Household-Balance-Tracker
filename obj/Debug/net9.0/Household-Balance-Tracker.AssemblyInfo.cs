@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Household-Balance-Tracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bec6ae26fe147a40bac5b67f26164c05615712d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7afac8c6f6f14ebc31f70759d9085fcd2edaad1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Household-Balance-Tracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Household-Balance-Tracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,6 +18,7 @@ public abstract class ITransaction
         this.value = value;
     }
     public abstract double getValue();
+    public abstract TransactionType getType();
 }
 
 public enum TransactionType { EXPENSE, INCOME }

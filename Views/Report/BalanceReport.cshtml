@@ -1,9 +1,82 @@
+@using Household_Balance_Tracker.Models
+@using Household_Balance_Tracker.Controllers
+@using Household_Balance_Tracker.Interfaces
+
 @{
     ViewData["Title"] = "Balance Report";
+
+    double houseTotalIncome = 0;
+    double houseTotalExpense = 0;
+    double houseBalance = 0;
 }
 
 <div class="balance-div">
     <h1>@ViewData["Title"]</h1>
 
-    <h1>Working ...</h1>
+    @if (PersonController.people.Count == 0)
+    {
+        <h1>No data found</h1>
+    }
+    else
+    {
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th class="col">Name</th>
+                    <th class="col">Age</th>
+                    <th class="col">Email</th>
+                    <th class="col">Id</th>
+                    <th class="col">Income</th>
+                    <th class="col">Expense</th>
+                    <th class="col">Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in PersonController.people.Values)
+                {
+                    double personTotalIncome = 0;
+                    double personTotalExpense = 0;
+                    double personBalance = 0;
+
+                    TransactionController.transactions.TryGetValue(person.getEmail(), out List<ITransaction> list);
+
+                    if (list != null)
+                    {
+                        foreach (var transaction in list)
+                        {
+                            if (transaction.getType() == TransactionType.EXPENSE)
+                            {
+                                personTotalExpense += transaction.getValue();
+                            }
+                            else
+                            {
+                                personTotalIncome += transaction.getValue();
+                            }
+                        }
+                    }
+
+                    personBalance = personTotalIncome - personTotalExpense;
+                    houseTotalIncome += personTotalIncome;
+                    houseTotalExpense += personTotalExpense;
+
+                    <tr>
+                        <td class="">@person.getName()</td>
+                        <td class="">@person.getAge()</td>
+                        <td class="">@person.getEmail()</td>
+                        <td class="">@person.getId()</td>
+                        <td class=""><span class="success">R$@personTotalIncome</span></td>
+                        <td class=""><span class="failed">@personTotalExpense</span></td>
+                        <td class="">@personBalance</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        houseBalance = houseTotalIncome - houseTotalExpense;
+
+        <br>
+        <h4 class="success">Total House Income: R$@houseTotalIncome</h4>
+        <h4 class="failed">Total House Expense: R$@houseTotalExpense</h4>
+        <h4>House Balance: R$@houseBalance</h4>
+    }
 </div>

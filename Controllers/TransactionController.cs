@@ -18,7 +18,7 @@ public class TransactionController : Controller
     /// <summary>
     /// Maps a person's email to a list of ITransactions (Expense, Income)
     /// </summary>
-    protected static Dictionary<string, List<ITransaction>>? transactions = new Dictionary<string, List<ITransaction>>();
+    public static Dictionary<string, List<ITransaction>>? transactions = new Dictionary<string, List<ITransaction>>();
     protected static int idCounter = 0;
 
     public IActionResult InsertTransactionForm()
@@ -41,7 +41,7 @@ public class TransactionController : Controller
             return View("TransactionFailedPersonNotFound", model);
         }
 
-        if (transactionOwner.getId() < 18 && "Income".Equals(model.type))
+        if (transactionOwner.getAge() < 18 && "Income".Equals(model.type))
         {
             return View("TransactionFailedPersonIsMinor", model);
         }

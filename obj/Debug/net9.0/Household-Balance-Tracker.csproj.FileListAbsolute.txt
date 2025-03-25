@@ -18,7 +18,7 @@
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/scopedcss/bundle/Household-Balance-Tracker.styles.css
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/scopedcss/projectbundle/Household-Balance-Tracker.bundle.scp.css
-/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-gc52ssgi62.gz
+/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8u2az19xxj.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/6sldhbayrs-61n19gt1b8.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/iyzkiv3fi7-fr7q2aak1r.gz
 /home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/6wnedzmpms-bqjiyaj88i.gz
