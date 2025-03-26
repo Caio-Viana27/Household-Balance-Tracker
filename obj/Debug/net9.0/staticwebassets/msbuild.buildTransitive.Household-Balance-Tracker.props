@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/Household-Balance-Tracker.props" />
-</Project>
