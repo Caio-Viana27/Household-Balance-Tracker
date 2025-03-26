@@ -1,0 +1,45 @@
+@using Household_Balance_Tracker.Models
+@using Household_Balance_Tracker.Controllers
+@using Household_Balance_Tracker.Interfaces
+
+@{
+    ViewData["Title"] = "Transactions List";
+}
+
+<div class="report-div">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (TransactionController.transactions.Count == 0)
+    {
+        <h1>No data found</h1>
+    }
+    else
+    {
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th class="col">id</th>
+                    <th class="col">type</th>
+                    <th class="col">Owner (id / email)</th>
+                    <th class="col">Description</th>
+                    <th class="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (List<ITransaction> list in TransactionController.transactions.Values)
+                {
+                    foreach (ITransaction transaction in list)
+                    {
+                        <tr>
+                            <td>@transaction.getId()</td>
+                            <td>@transaction.getType()</td>
+                            <td>@transaction.getOwnerIdentifier()</td>
+                            <td>@transaction.getDetails()</td>
+                            <td>@transaction.getValue()</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+</div>

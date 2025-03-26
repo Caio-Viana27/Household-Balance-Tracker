@@ -27,15 +27,20 @@ public class PersonController : Controller
         return View();
     }
 
+    public IActionResult ListPeople()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult InsertPerson(PersonViewModel model)
     {
-        System.Console.WriteLine("Name: " + model.name);
-        System.Console.WriteLine("Age: " + model.age);
-        System.Console.WriteLine("email: " + model.email);
-
         if (ModelState.IsValid)
         {
+            if (people.ContainsKey(model.email))
+            {
+                return View("InsertPersonFailed", model);
+            }
             people.Add(model.email, new Person(idCounter++, model.name, model.age, model.email));
 
             ViewBag.Massage = "Registration Successfull";

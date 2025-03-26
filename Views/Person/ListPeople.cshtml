@@ -1,0 +1,39 @@
+@using Household_Balance_Tracker.Models
+@using Household_Balance_Tracker.Controllers
+
+@{
+    ViewData["Title"] = "People List";
+}
+
+<div class="report-div">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (PersonController.people.Count == 0)
+    {
+        <h1>No data found</h1>
+    }
+    else
+    {
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th class="col">Name</th>
+                    <th class="col">Age</th>
+                    <th class="col">Email</th>
+                    <th class="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in PersonController.people.Values)
+                {
+                    <tr>
+                        <td>@person.getName()</td>
+                        <td>@person.getAge()</td>
+                        <td>@person.getEmail()</td>
+                        <td>@person.getId()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

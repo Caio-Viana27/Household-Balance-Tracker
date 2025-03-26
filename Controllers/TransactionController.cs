@@ -26,6 +26,11 @@ public class TransactionController : Controller
         return View();
     }
 
+    public IActionResult ListTransactions()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult InsertTransaction(TransactionViewModel model)
     {

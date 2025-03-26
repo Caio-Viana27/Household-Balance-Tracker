@@ -17,7 +17,25 @@ public abstract class ITransaction
         this.details = details;
         this.value = value;
     }
-    public abstract double getValue();
+    public double getValue()
+    {
+        return value;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public string getDetails()
+    {
+        return details;
+    }
+
+    public string getOwnerIdentifier()
+    {
+        return ownerEmailOrId;
+    }
     public abstract TransactionType getType();
 }
 

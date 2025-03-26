@@ -10,11 +10,6 @@ public class Income : ITransaction
 
     }
 
-    public override double getValue()
-    {
-        return value;
-    }
-
     public override TransactionType getType()
     {
         return type;
