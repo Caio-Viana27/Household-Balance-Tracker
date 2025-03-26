@@ -71,8 +71,8 @@ packages/
 ##################
 appsettings*.json
 secrets.json
-wwwroot/lib/
-wwwroot/node_modules/
+#wwwroot/lib/
+#wwwroot/node_modules/
 
 ##################
 # OS-generated   #
