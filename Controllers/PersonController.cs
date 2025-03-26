@@ -48,26 +48,24 @@ public class PersonController : Controller
     }
 
     [HttpPost]
-    public IActionResult RemovePerson(string? email)
+    public IActionResult RemovePerson(DeletePersonViewModel? model)
     {
-        if (model.email == null)
+        if (!ModelState.IsValid)
         {
-            System.Console.WriteLine("Email is null!");
             return View("RemovePersonForm");
         }
 
         if (people.Count == 0 || !people.ContainsKey(model.email))
         {
-            return View("RemovePersonForm");
+            @ViewData["email"] = "This email does not exist: " + model.email;
+            return View("PersonRemovalFailed");
         }
 
-        Person toBeRemoved = null;
-        people.TryGetValue(model.email, out toBeRemoved);
-
-        // implemt remove Transactions beloging to person.email
+        bool uselessReturn = TransactionController.removePersonTransactions(model.email);
+        people.TryGetValue(model.email, out Person toBeRemoved);
 
         people.Remove(model.email);
-        return View("SuccessfulPersonWarning", new PersonViewModel(toBeRemoved.getName(),
+        return View("SuccessfulPersonRemoval", new PersonViewModel(toBeRemoved.getName(),
                                                    toBeRemoved.getAge(),
                                                    toBeRemoved.getEmail()));
     }

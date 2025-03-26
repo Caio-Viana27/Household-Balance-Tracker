@@ -112,4 +112,14 @@ public class TransactionController : Controller
         PersonController.people.TryGetValue(emailOrId, out Person value);
         return value;
     }
+
+    public static bool removePersonTransactions(string? email)
+    {
+        if (!transactions.ContainsKey(email))
+        {
+            return false;
+        }
+        transactions.Remove(email);
+        return true;
+    }
 }

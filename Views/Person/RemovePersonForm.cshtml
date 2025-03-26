@@ -1,6 +1,6 @@
 @using Household_Balance_Tracker.Models.ViewModels
 
-@model PersonViewModel
+@model DeletePersonViewModel
 
 @{
     ViewData["Title"] = "Remove Person";
@@ -13,7 +13,7 @@
     {
         <div class="form-group">
             <label for="personEmail">Email Address</label>
-            @Html.TextBoxFor(m => m.email, new { @name = "email", @id = "personEmail", @class = "form-control form-field",
+            @Html.TextBoxFor(m => m.email, new { @id = "personEmail", @class = "form-control form-field",
             @placeholder = "Enter email" })
         @Html.ValidationMessageFor(m => m.email, null, new { @class = "validation-warning" })
     </div>
