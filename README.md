@@ -10,11 +10,13 @@ Download JDK: https://dotnet.microsoft.com/en-us/download
 # To run the project locally
 
 1- Clone this repo
+
 2- Make sure you're on the home directory
+
 3- Write the following on the terminal (linux/bash/wsl)
+
 ```ssh
-
 dotnet build && dotnet run
-
 ```
+
 4- Enjoy or hate it!
