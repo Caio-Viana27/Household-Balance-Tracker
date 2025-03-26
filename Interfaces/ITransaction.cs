@@ -7,14 +7,14 @@ public abstract class ITransaction
 {
     protected int id;
     protected string ownerEmailOrId { get; }
-    protected string? details { get; }
+    protected string? description { get; }
     protected double value { get; }
 
-    protected ITransaction(int id, string emailOrId, string details, double value)
+    protected ITransaction(int id, string emailOrId, string description, double value)
     {
         this.id = id;
         this.ownerEmailOrId = emailOrId;
-        this.details = details;
+        this.description = description;
         this.value = value;
     }
     public double getValue()
@@ -27,9 +27,9 @@ public abstract class ITransaction
         return id;
     }
 
-    public string getDetails()
+    public string getDescription()
     {
-        return details;
+        return description;
     }
 
     public string getOwnerIdentifier()

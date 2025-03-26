@@ -2,8 +2,10 @@
 
 @model PersonViewModel
 
-<h2 class="failed">Registration Failed</h2>
-<h2 class="failed">This Email already exists</h2>
-<p>Name: @Model.name</p>
-<p class="failed">Email: @Model.email</p>
-<p>Age: @Model.age</p>
+<div class="div-failed warning-div">
+    <h2 class="failed">Registration Failed</h2>
+    <h4 class="failed">This Email already exists</h4>
+    <p>Name: @Model.name</p>
+    <p class="failed">Email: @Model.email</p>
+    <p>Age: @Model.age</p>
+</div>

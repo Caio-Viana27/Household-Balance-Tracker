@@ -80,3 +80,20 @@ body {
     color: rgb(255, 0, 0);
 }
 
+.warning-div {
+    width: 40%;
+    margin: auto;
+
+    padding:2%;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.success-div {
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.failed-div {
+    border: 2px solid rgb(255, 0, 0);
+}

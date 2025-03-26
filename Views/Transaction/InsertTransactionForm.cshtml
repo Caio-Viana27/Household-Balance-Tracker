@@ -17,9 +17,9 @@
     @using (Html.BeginForm("InsertTransaction", "Transaction", FormMethod.Post))
     {
         <div class="form-group">
-            <label for="transactionDetails">Details</label>
-            @Html.TextBoxFor(m => m.details, new { @id = "transactionDetails", @class = "form-control form-field", @placeholder = "Details" })
-            @Html.ValidationMessageFor(m => m.details, null, new { @class = "validation-warning" })
+            <label for="transactionDescription">Description</label>
+            @Html.TextBoxFor(m => m.description, new { @id = "transactionDescription", @class = "form-control form-field", @placeholder = "Description" })
+            @Html.ValidationMessageFor(m => m.description, null, new { @class = "validation-warning" })
         </div>
 
         <div class="form-group">

@@ -62,8 +62,7 @@ public class PersonController : Controller
 
         if (people.Count == 0 || !people.ContainsKey(model.email))
         {
-            @ViewData["email"] = "This email does not exist: " + model.email;
-            return View("PersonRemovalFailed");
+            return View("PersonRemovalFailed", model);
         }
 
         bool uselessReturn = TransactionController.removePersonTransactions(model.email);

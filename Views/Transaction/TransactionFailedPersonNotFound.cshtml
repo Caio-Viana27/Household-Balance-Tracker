@@ -2,9 +2,11 @@
 
 @model TransactionViewModel
 
-<h2 class="failed">Registration Failed</h2>
-<h2 class="failed">Owner Identifier not Found</h2>
-<p>Details: @Model.details</p>
-<p>Value: @Model.value</p>
-<p>Type: @Model.type</p>
-<p class="failed">Owner Identifier: @Model.emailOrId</p>
+<div class="failed-div warning-div">
+    <h2 class="failed">Registration Failed</h2>
+    <h4 class="failed">Owner Identifier not Found</h4>
+    <p>Details: @Model.description</p>
+    <p>Value: @Model.value</p>
+    <p>Type: @Model.type</p>
+    <p class="failed">Owner Identifier: @Model.emailOrId</p>
+</div>

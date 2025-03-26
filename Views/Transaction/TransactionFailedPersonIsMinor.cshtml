@@ -2,9 +2,11 @@
 
 @model TransactionViewModel
 
-<h2 class="failed">Registration Failed</h2>
-<h2 class="failed">Owners under age can not have income</h2>
-<p>Details: @Model.details</p>
-<p>Value: @Model.value</p>
-<p class="failed">Type: @Model.type</p>
-<p>Owner Identifier: @Model.emailOrId</p>
+<div class="failed-div warning-div">
+    <h2 class="failed">Registration Failed</h2>
+    <h4 class="failed">Owners under age can not have income</h4>
+    <p>Details: @Model.description</p>
+    <p>Value: @Model.value</p>
+    <p class="failed">Type: @Model.type</p>
+    <p>Owner Identifier: @Model.emailOrId</p>
+</div>

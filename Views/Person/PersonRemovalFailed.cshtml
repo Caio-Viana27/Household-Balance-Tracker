@@ -1,2 +1,8 @@
-<h2 class="failed">Removal Failed</h2>
-<p>@ViewData["email"]</p>
+@using Household_Balance_Tracker.Models.ViewModels
+
+@model DeletePersonViewModel
+
+<div class="failed-div warning-div">
+    <h2 class="failed">Removal Failed</h2>
+    <p>This email does not exist: <span class="failed">@Model.email</span></p>
+</div>

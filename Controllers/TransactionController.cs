@@ -34,11 +34,6 @@ public class TransactionController : Controller
     [HttpPost]
     public IActionResult InsertTransaction(TransactionViewModel model)
     {
-        System.Console.WriteLine("Details: " + model.details);
-        System.Console.WriteLine("Value: " + model.value);
-        System.Console.WriteLine("Type: " + model.type);
-        System.Console.WriteLine("Person Id: " + model.emailOrId);
-
         Person transactionOwner = getOwner(model.emailOrId);
 
         if (ModelState.IsValid)
@@ -68,11 +63,11 @@ public class TransactionController : Controller
     {
         if ("Expense".Equals(model.type))
         {
-            addToList(ownerEmail, new Expense(idCounter++, model.details, Convert.ToDouble(model.value), model.emailOrId));
+            addToList(ownerEmail, new Expense(idCounter++, model.description, Convert.ToDouble(model.value), model.emailOrId));
         }
         else if ("Income".Equals(model.type))
         {
-            addToList(ownerEmail, new Income(idCounter++, model.details, Convert.ToDouble(model.value), model.emailOrId));
+            addToList(ownerEmail, new Income(idCounter++, model.description, Convert.ToDouble(model.value), model.emailOrId));
         }
     }
 
@@ -95,7 +90,7 @@ public class TransactionController : Controller
     /// Simple method that return if an id or email exists in a dictionary
     /// </summary>
     /// /// <param name="emailOrId">The email or ID of the person.</param>
-    /// <returns>The matching <see cref="Person"/> if found; otherwise, <c>null</c>.</returns>
+    /// <returns>The matching <c><see cref="Person"/></c> if found; otherwise, <c>null</c>.</returns>
     private Person getOwner(string? emailOrId)
     {
         if (emailOrId == null)
@@ -118,6 +113,11 @@ public class TransactionController : Controller
         return value;
     }
 
+    /// <summary>
+    /// Simple method that remove the transactions that belong to a person
+    /// </summary>
+    /// /// <param name="email">The email of the person.</param>
+    /// <returns><c>true</c> if the transactions were successfuly Removed; otherwise, <c>false</c>.</returns>
     public static bool removePersonTransactions(string? email)
     {
         if (!transactions.ContainsKey(email))

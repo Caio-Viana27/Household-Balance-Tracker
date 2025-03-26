@@ -2,8 +2,10 @@
 
 @model TransactionViewModel
 
-<h2 class="success">Registration Successful</h2>
-<p>Details: @Model.details</p>
-<p>Value: @Model.value</p>
-<p>Type: @Model.type</p>
-<p>Owner Identifier: @Model.emailOrId</p>
+<div class="success-div warning-div">
+    <h2 class="success">Registration Successful</h2>
+    <p>Details: @Model.description</p>
+    <p>Value: @Model.value</p>
+    <p>Type: @Model.type</p>
+    <p>Owner Identifier: @Model.emailOrId</p>
+</div>

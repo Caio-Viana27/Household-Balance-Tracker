@@ -11,7 +11,7 @@
 
     @if (TransactionController.transactions.Count == 0)
     {
-        <h1>No data found</h1>
+        <h4>No data found</h4>
     }
     else
     {
@@ -34,7 +34,7 @@
                             <td>@transaction.getId()</td>
                             <td>@transaction.getType()</td>
                             <td>@transaction.getOwnerIdentifier()</td>
-                            <td>@transaction.getDetails()</td>
+                            <td>@transaction.getDescription()</td>
                             <td>@transaction.getValue()</td>
                         </tr>
                     }

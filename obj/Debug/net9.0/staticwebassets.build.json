@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0j5yyYQelBf6QbgBnqsfxdmZBbobQuW/vgT6mUgwx3k=",
+  "Hash": "GPOYqEbFMGFT+PDegeN7N64MiY2pLDk1yOHDEqieEJ4=",
   "Source": "Household-Balance-Tracker",
   "BasePath": "_content/Household-Balance-Tracker",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-v5emkpmkfc.gz",
+      "Identity": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8h3afav2tq.gz",
       "SourceId": "Household-Balance-Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Household-Balance-Tracker",
-      "RelativePath": "css/site#[.{fingerprint=v5emkpmkfc}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=8h3afav2tq}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fu6573zd88",
-      "Integrity": "53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4=",
+      "Fingerprint": "lic5lv1jb6",
+      "Integrity": "Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/css/site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v5emkpmkfc",
-      "Integrity": "zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY=",
+      "Fingerprint": "8h3afav2tq",
+      "Integrity": "5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-v5emkpmkfc.gz",
+      "Route": "css/site.8h3afav2tq.css",
+      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8h3afav2tq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001841620626"
+          "Quality": "0.001739130435"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "574"
         },
         {
           "Name": "ETag",
-          "Value": "\"53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4=\""
+          "Value": "\"Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,18 +2772,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY=\""
+          "Value": "W/\"5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "8h3afav2tq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY="
+          "Value": "sha256-5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.8h3afav2tq.css",
       "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2793,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1484"
+          "Value": "1730"
         },
         {
           "Name": "Content-Type",
@@ -2801,121 +2809,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY=\""
+          "Value": "\"5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-v5emkpmkfc.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "542"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.v5emkpmkfc.css",
-      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-v5emkpmkfc.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001841620626"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "542"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v5emkpmkfc"
+          "Value": "8h3afav2tq"
         },
         {
           "Name": "label",
@@ -2923,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY="
+          "Value": "sha256-5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc="
         }
       ]
     },
     {
-      "Route": "css/site.v5emkpmkfc.css",
-      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/css/site.css",
+      "Route": "css/site.8h3afav2tq.css.gz",
+      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8h3afav2tq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1484"
+          "Value": "574"
         },
         {
           "Name": "Content-Type",
@@ -2946,56 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY=\""
+          "Value": "\"Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v5emkpmkfc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zRbeTZIPm1zgTljlFzWawlsoLKq/1bN3mw6b47kNHBY="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.v5emkpmkfc.css.gz",
-      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-v5emkpmkfc.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "542"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:08:01 GMT"
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v5emkpmkfc"
+          "Value": "8h3afav2tq"
         },
         {
           "Name": "label",
@@ -3021,7 +2884,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-53QX+HdmwkV3Df5s3mhpyGLuwz9YD9l/uam0RiiA4n4="
+          "Value": "sha256-Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8h3afav2tq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001739130435"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "574"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IiZW05gYu6u2CcTFmNZePCN0LeTT4/LU98ADsYjmWc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/home/caioviana/Projects/maxprod-retest/Household-Balance-Tracker/obj/Debug/net9.0/compressed/csa92tn7es-8h3afav2tq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "574"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 00:46:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y1AnPavqbN7fjuChc5Ho2uMwixE56AEDsx972V12oVU="
         }
       ]
     },
@@ -3348,7 +3348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3409,7 +3409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3454,7 +3454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3509,7 +3509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3570,7 +3570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3615,7 +3615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3670,7 +3670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3723,7 +3723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3760,7 +3760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3807,7 +3807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3860,7 +3860,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3897,7 +3897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 00:32:18 GMT"
+          "Value": "Wed, 26 Mar 2025 01:40:51 GMT"
         },
         {
           "Name": "Cache-Control",
