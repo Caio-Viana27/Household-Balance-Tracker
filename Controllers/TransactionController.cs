@@ -98,7 +98,7 @@ public class TransactionController : Controller
 
         if (Int32.TryParse(emailOrId, out int id))
         {
-            if (id < PersonController.idCounter)
+            if (id >= PersonController.idCounter)
                 return null;
 
             foreach (Person person in PersonController.people.Values)
